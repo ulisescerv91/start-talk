@@ -1,0 +1,32 @@
+.HomeInterface{
+    .categories{
+        display: flex;
+        flex-direction: column;
+        &__section{
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 25vh;
+            &__title{
+                // text-align: center;
+            }
+            &__icon{
+                height: 65%;
+            }
+            .icon_family{
+                height: 100%;
+            }
+            .icon_hello{
+                height: 90%;
+            }
+        }
+    }
+    .bg_green{
+        background-color: #78C2AD;        
+    }
+    .bg_pink{
+        background-color: #F3969A;
+    }
+}

@@ -1,0 +1,38 @@
+.palabra{
+    .item{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "name name name name"
+            "video video video video"
+            "video video video video"
+            "video video video video"
+            "video video video video";
+       .item__name{
+            grid-area: name;
+            h1{
+                text-align: center;
+            }
+       }
+       .item__video{
+            grid-area: video;
+            overflow: hidden;
+            position: relative;
+            &__file{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .react-player{                                  
+                }
+            }
+            &__buttons{
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+       }
+    }
+}
