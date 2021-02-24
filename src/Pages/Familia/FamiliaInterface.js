@@ -1,5 +1,5 @@
-import React, { useEffect,useContext,useState } from 'react';
-import {Link, useHistory } from 'react-router-dom'
+import React, {useContext } from 'react';
+import { useHistory } from 'react-router-dom'
 
 import DataContext from '../../Utils/Context/Data/DataContext'
 
