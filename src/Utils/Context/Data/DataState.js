@@ -42,37 +42,38 @@ const DataState = (props) =>{
                 id:5,
                 name:'David',
                 img:'david',
-                mp4:'angie',
+                mp4:'david',
                 relation:'Hermano'
             },
             {
                 id:6,
                 name:'Ale',
                 img:'ale',
-                mp4:'angie',
+                mp4:'ale',
                 relation:'Hermana'
-            },
-            {
-                id:7,
-                name:'Luigi',
-                img:'luigi',
-                mp4:'angie',
-                relation:'Hermano'
-            },
-            {
-                id:8,
-                name:'Liz',
-                img:'liz',
-                mp4:'angie',
-                relation:'Cuñada'
-            },
-            {
-                id:9,
-                name:'Alexis',
-                img:'alexis',
-                mp4:'angie',
-                relation:'Cuñada'
             }
+            // ,
+            // {
+            //     id:7,
+            //     name:'Luigi',
+            //     img:'luigi',
+            //     mp4:'angie',
+            //     relation:'Hermano'
+            // },
+            // {
+            //     id:8,
+            //     name:'Liz',
+            //     img:'liz',
+            //     mp4:'angie',
+            //     relation:'Cuñada'
+            // },
+            // {
+            //     id:9,
+            //     name:'Alexis',
+            //     img:'alexis',
+            //     mp4:'angie',
+            //     relation:'Cuñada'
+            // }
         ],
         selectedPerson:null
     }//Este es el estado

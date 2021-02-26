@@ -29,22 +29,22 @@ const PalabraInterface = () => {
                         selectedPerson.map((el, i) => {
                 
                             return <div className="item" key={i}>
-                                <div className="item__name">
-                                    <h1>{el.name}</h1>
-                                </div>
                                 <div className="item__video">
+                                    <div className="item__video__name">
+                                        <h1>{el.name}</h1>
+                                    </div>
                                     <div className="item__video__file">
                                         <ReactPlayer 
                                                     className='react-player'
                                                     playing	={true}
                                                     loop={true}
-                                                    height='90vh'
+                                                    height='100vh'
                                                     width='100%'
                                                     muted = {muted}
                                                     url={require(`../../Assets/videos/familia/${el.mp4}.mp4`).default} />
                                     </div>
                                     <div className="item__video__buttons">
-                                        <button onClick={muteVideo}>Mute</button>
+                                        <button onClick={muteVideo} className='item__video__buttons__mute'>Mute</button>
                                     </div>
                                 </div>
                             </div>                        

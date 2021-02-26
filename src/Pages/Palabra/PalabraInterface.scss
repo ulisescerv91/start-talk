@@ -1,37 +1,48 @@
 .palabra{
     .item{
         height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "name name name name"
-            "video video video video"
-            "video video video video"
-            "video video video video"
-            "video video video video";
-       .item__name{
-            grid-area: name;
-            h1{
-                text-align: center;
-            }
-       }
+        // display: grid;
+        // grid-template-columns: 1fr 1fr 1fr 1fr;
+        // grid-template-rows: auto;
+        // grid-template-areas: 
+        //     "name name name name"
+        //     "video video video video"
+        //     "video video video video"
+        //     "video video video video"
+        //     "video video video video";       
        .item__video{
-            grid-area: video;
+            // grid-area: video;
             overflow: hidden;
             position: relative;
+            &__name{
+                position: absolute;
+                width: 100%;                
+                h1{
+                    text-align: center;
+                }
+           }
             &__file{
-                width: 100%;
+                // border:1px solid red;
+                // width: 100%;
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                // align-items: center;
+                // justify-content: center;
                 .react-player{                                  
                 }
             }
             &__buttons{
                 position: absolute;
-                bottom: 20px;
-                right: 20px;
+                left: 20px;
+                bottom: 100px;
+
+                &__mute{
+                    border:none;
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 50% ;
+                    border:3px solid red;
+                    opacity: 0.5;
+                }
             }
        }
     }
