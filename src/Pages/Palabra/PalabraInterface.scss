@@ -1,6 +1,7 @@
 .palabra{  
     background-color: #D9CAB8;  
     height: 100vh;
+    overflow: hidden;
     .item{               
         padding: 2em 2em 0 2em;        
        .item__video{           
@@ -41,7 +42,7 @@
             }
             &__buttons{
                 position: absolute;
-                left: 20px;
+                left: -20px;
                 bottom: 100px;
 
                 &__mute{

@@ -14,14 +14,14 @@ const HomeInterface = () => {
                         <h1 className="categories__section__title">Familia</h1>
                         <img src={'./Assets/icons/family.png'} alt="Familia" className='categories__section__icon icon_family'/>
                     </Link>                                    
-                    <Link to="/saludos" className='categories__section bg_green' >
-                        <h1 className="categories__section__title">Saludos</h1>
-                        <img src={'./Assets/icons/hello.png'} alt="Familia" className='categories__section__icon icon_hello'/>
+                    <Link to="/comida" className='categories__section bg_green' >
+                        <h1 className="categories__section__title">Comida</h1>
+                        <img src={'./Assets/icons/hello.png'} alt="Comida" className='categories__section__icon icon_hello'/>
 
                     </Link>
-                    <Link to="dias" className='categories__section '>
-                        <h1 className="categories__section__title">Dias de la semana</h1>
-                        <img src={'./Assets/icons/schedule.png'} alt="Familia" className='categories__section__icon '/>
+                    <Link to="/lugares" className='categories__section '>
+                        <h1 className="categories__section__title">Lugares</h1>
+                        <img src={'./Assets/icons/schedule.png'} alt="Lugares" className='categories__section__icon '/>
 
                     </Link>
                     <Link to="/numeros" className='categories__section bg_pink'>

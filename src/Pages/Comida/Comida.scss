@@ -1,0 +1,58 @@
+.comida{
+    background-color: purple;
+    // padding-bottom: 50px;
+    &__categories{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:1px solid white;
+        &__option{
+            height: 20vh;
+            border:1px solid black;
+            background-color: white;
+            position: relative;
+            width: 80%;
+            &__img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: #fff;
+
+                 border:1px solid red;
+                 border-radius: 3em;
+                 width: 120px;
+                 height: 100px;
+
+
+                 position: absolute;
+
+                 left: -30px;
+                top: 50%;                
+                transform: translateY(-50%);
+
+                 img{
+                    width: 80px;
+                    height: auto;
+                 }
+            }
+            &__name{
+                margin-left: 90px;
+            }
+            &__icon{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                width: 50px;
+                
+                background-color: red;
+                right: -25px;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+        }
+    }
+}
