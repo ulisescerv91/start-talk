@@ -78,7 +78,7 @@ const DataState = (props) =>{
         selectedPerson:null,
         food:[
             {
-                category:'Frutas',
+                category:'frutas',
                 img:'frutas',
                 items:[
                     {
@@ -88,7 +88,7 @@ const DataState = (props) =>{
                 ]
             },
             {
-                category:'Verduras',
+                category:'verduras',
                 img:'verduras',
                 items:[
                     {
@@ -98,7 +98,7 @@ const DataState = (props) =>{
                 ]
             },
             {
-                category:'Desayuno',
+                category:'desayuno',
                 img:'desayuno',
                 items:[
                     {
@@ -108,7 +108,7 @@ const DataState = (props) =>{
                 ]
             },
             {
-                category:'Comida',
+                category:'comida',
                 img:'comida',
                 items:[
                     {
@@ -118,7 +118,7 @@ const DataState = (props) =>{
                 ]
             },
             {
-                category:'Cena',
+                category:'cena',
                 img:'cena',
                 items:[
                     {
@@ -128,7 +128,7 @@ const DataState = (props) =>{
                 ]
             },
             {
-                category:'Postres',
+                category:'postres',
                 img:'postres',
                 items:[
                     {
