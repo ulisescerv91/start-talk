@@ -10,7 +10,7 @@ import './PalabraInterface.scss'
 const PalabraInterface = () => {
     let history = useHistory();
     const {selectedPerson  } = useContext(DataContext)
-    const [muted, setMuted] = useState(true);
+    const [muted, setMuted] = useState(false);
 
 
     useEffect(() => {
