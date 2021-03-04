@@ -75,7 +75,69 @@ const DataState = (props) =>{
                 relation:'Cuñada'
             }
         ],
-        selectedPerson:null
+        selectedPerson:null,
+        food:[
+            {
+                category:'Frutas',
+                img:'frutas',
+                items:[
+                    {
+                        name:'manzana',
+                        img:'manzana'
+                    }
+                ]
+            },
+            {
+                category:'Verduras',
+                img:'verduras',
+                items:[
+                    {
+                        name:'jitomate',
+                        img:'jitomate'
+                    }
+                ]
+            },
+            {
+                category:'Desayuno',
+                img:'desayuno',
+                items:[
+                    {
+                        name:'huevos',
+                        img:'huevos'
+                    }
+                ]
+            },
+            {
+                category:'Comida',
+                img:'comida',
+                items:[
+                    {
+                        name:'huevos',
+                        img:'huevos'
+                    }
+                ]
+            },
+            {
+                category:'Cena',
+                img:'cena',
+                items:[
+                    {
+                        name:'huevos',
+                        img:'huevos'
+                    }
+                ]
+            },
+            {
+                category:'Postres',
+                img:'postres',
+                items:[
+                    {
+                        name:'huevos',
+                        img:'huevos'
+                    }
+                ]
+            }
+        ]
     }//Este es el estado
 
     const [state, dispatch] = useReducer(DataReducer ,initialState)
@@ -83,7 +145,7 @@ const DataState = (props) =>{
     const getFamily = () => {
         dispatch({
             type:'GET_FAMILY',
-            payload:[{name:'uli'},{name:'angie'}]
+            payload:[{name:'angie'}]
         })//Usando el dispatch  se actualizara 'familia que esta en el initial state'. Es como usar el useState        
     }
     
@@ -97,8 +159,9 @@ const DataState = (props) =>{
     return (
         <DataContext.Provider value={ {
                 family: state.family,
+                food:state.food,
                 selectedPerson: state.selectedPerson,
-                getFamily,
+                getFamily,            
                 setSelectedPerson
             }}>            
             {

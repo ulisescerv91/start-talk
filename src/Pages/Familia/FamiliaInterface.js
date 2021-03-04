@@ -1,4 +1,4 @@
-import React, {useContext } from 'react';
+import React, {useContext,useEffect,useState } from 'react';
 import { useHistory } from 'react-router-dom'
 
 import DataContext from '../../Utils/Context/Data/DataContext'
@@ -9,18 +9,23 @@ import './FamiliaInterface.scss'
 
 const FamiliaInterface = () => {
 
-    const { family,setSelectedPerson } = useContext(DataContext)
-    // const [family, setfamily] = useState([]);
+    const { family,setSelectedPerson } = useContext(DataContext)    
 
     let history = useHistory();
+
+    useEffect(() => {
+    }, [])
   
     const handleClick  = (elm) =>{
         setSelectedPerson(elm)
         history.push("/palabra");
     } 
 
+    
+
     return (                            
                     <div className='familia'>
+                        
                             {/* Todo lo que este aqui accedera al context de familia */}
                         {
                             family.map( (el,i)=>{
