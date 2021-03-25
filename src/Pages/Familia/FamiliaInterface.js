@@ -20,9 +20,6 @@ const FamiliaInterface = () => {
         setSelectedPerson(elm)
         history.push("/palabra");
     } 
-
-    
-
     return (                            
                     <div className='familia'>
                         

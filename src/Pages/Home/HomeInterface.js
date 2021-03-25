@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LiveHelpIcon from '@material-ui/icons/LiveHelp';
 import './HomeInterface.scss'
 
 //img
@@ -27,8 +28,12 @@ const HomeInterface = () => {
                     <Link to="/numeros" className='categories__section bg_pink'>
                         <h1 className="categories__section__title">Numeros</h1>
                         <img src={'./Assets/icons/number.png'} alt="Familia" className='categories__section__icon'/>
-
-                    </Link>               
+                    </Link>     
+                    <Link to="/preguntas" className='categories__section'>
+                        <h1 className="categories__section__title">Preguntas</h1>
+                        {/* <img src={'./Assets/icons/number.png'} alt="Familia" className='categories__section__icon'/> */}
+                        <LiveHelpIcon  style={{ fontSize: 65}}/>
+                    </Link>            
             </div>
         </div>
     );

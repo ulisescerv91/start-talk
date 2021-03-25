@@ -82,8 +82,19 @@ const DataState = (props) =>{
                 img:'frutas',
                 items:[
                     {
-                        name:'manzana',
-                        img:'manzana'
+                        name:'manzana'                        
+                    },
+                    {
+                        name:'pera',
+                    },
+                    {
+                        name:'manzana'                        
+                    },
+                    {
+                        name:'manzana'                        
+                    },
+                    {
+                        name:'manzana'                        
                     }
                 ]
             },
@@ -92,9 +103,24 @@ const DataState = (props) =>{
                 img:'verduras',
                 items:[
                     {
-                        name:'jitomate',
-                        img:'jitomate'
+                        name:'jitomate'
+                    },
+                    {
+                        name:'cebolla'
+                    },
+                    {
+                        name:'chile'
+                    },
+                    {
+                        name:'aguacate'
+                    },
+                    {
+                        name:'tomate'
+                    },
+                    {
+                        name:'zanahoria'
                     }
+
                 ]
             },
             {
@@ -102,8 +128,22 @@ const DataState = (props) =>{
                 img:'desayuno',
                 items:[
                     {
-                        name:'huevos',
-                        img:'huevos'
+                        name:'huevos'
+                    },
+                    {
+                        name:'quesadillas'
+                    },
+                    {
+                        name:'cereal'
+                    },
+                    {
+                        name:'licuado '
+                    },
+                    {
+                        name:'hot cakes'
+                    },
+                    {
+                        name:'molletes'
                     }
                 ]
             },
@@ -112,9 +152,12 @@ const DataState = (props) =>{
                 img:'comida',
                 items:[
                     {
-                        name:'huevos',
-                        img:'huevos'
+                        name:'pollo'
+                    },
+                    {
+                        name:'pescado'
                     }
+
                 ]
             },
             {
@@ -122,8 +165,7 @@ const DataState = (props) =>{
                 img:'cena',
                 items:[
                     {
-                        name:'huevos',
-                        img:'huevos'
+                        name:'esquite'
                     }
                 ]
             },
@@ -132,9 +174,11 @@ const DataState = (props) =>{
                 img:'postres',
                 items:[
                     {
-                        name:'huevos',
-                        img:'huevos'
-                    }
+                        name:'nieve'
+                    },
+                    {
+                        name:'chocolate'
+                    },
                 ]
             }
         ]

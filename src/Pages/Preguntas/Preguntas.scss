@@ -1,0 +1,31 @@
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    &__data{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;        
+        width: 250px;
+        height: 250px;
+        font-weight: bold;
+        color:white;
+        border-radius:6px;
+        &__text{
+            font-size: 90px;
+        }
+
+    }
+}
+
+
+.bg-green{
+    background-color: #28a745;    
+}
+.bg-red{
+    background-color: #dc3545;    
+}
